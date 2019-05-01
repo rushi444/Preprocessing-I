@@ -60,6 +60,8 @@ table {
 .tableb {
 	border: 1px solid black; 
 }
+@hovercolor: white;
+@hovertextcolor: black; 
 * {
 	box-sizing: border-box;
 	 }
@@ -106,6 +108,11 @@ nav {
 		font-size: 20px; 
 		width: 150px;
 		height: 50px;  
+	}
+	button:hover {
+		background-color: @hovercolor; 
+		color: @hovertextcolor; 
+
 	}
 }
 .mid {
@@ -165,4 +172,31 @@ footer {
 	padding-bottom: 10px;  
 	text-align: center; 
 	
+}
+
+@media (max-width: 500px) {
+	body {
+		margin: 0 auto; 
+		max-width: 100%; 
+		padding: 20px; 
+	}
+	nav {
+		display: flex; 
+		flex-flow: column wrap; 
+		align-items: center; 
+	}
+	.top {
+		#computer {
+			width: 100%; 
+		}
+	}
+	.mid {
+		display: block; 
+		.listenup {
+			width: 100%; 
+		}
+		.stuff {
+			width: 100%; 
+		}
+	}
 }

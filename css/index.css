@@ -184,6 +184,10 @@ nav a {
   width: 150px;
   height: 50px;
 }
+.top button:hover {
+  background-color: white;
+  color: black;
+}
 .mid {
   padding-top: 20px;
   display: flex;
@@ -234,4 +238,28 @@ footer {
   padding-top: 40px;
   padding-bottom: 10px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
+  }
+  nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .top #computer {
+    width: 100%;
+  }
+  .mid {
+    display: block;
+  }
+  .mid .listenup {
+    width: 100%;
+  }
+  .mid .stuff {
+    width: 100%;
+  }
 }
